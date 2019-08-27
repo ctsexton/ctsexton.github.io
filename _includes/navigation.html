@@ -1,5 +1,5 @@
 <nav>
-  <a href="/">
+  <a href="{{ "/" | relative_url }}">
     <div class="business-card">
       <h3>Cameron Sexton</h3>
       <p>Software <br>& Sound</p>
@@ -9,7 +9,7 @@
     {% for item in site.data.navigation %}
       {% if page.title == 'resume' %}
         <li>
-          <a href="{{ item.link }}">
+          <a href="{{ item.link | relative_url }}">
             <i class="material-icons" style="color: {{ item.color }}">{{ item.icon }}</i>
             {{ item.name }}
           </a>
@@ -17,7 +17,7 @@
         <ul>
         {% for subitem in item.subdirectories %}
           <li>
-            <a href="{{ subitem.link }}">
+            <a href="{{ subitem.link | relative_url }}">
               <i class="material-icons" style="color: {{ subitem.color }}">{{ subitem.icon }}</i>
               {{ subitem.name }}
             </a>
@@ -26,7 +26,7 @@
         </ul>
       {% else %}
         <li>
-          <a href="{{ item.link }}">
+          <a href="{{ item.link | relative_url }}">
             <i class="material-icons" style="color: {{ item.color }}">{{ item.icon }}</i>
             {{ item.name }}
           </a>
