@@ -1,0 +1,40 @@
+<nav>
+  <a href="/">
+    <div class="business-card">
+      <h3>Cameron Sexton</h3>
+      <p>Software <br>& Sound</p>
+    </div>
+  </a>
+  <ul>
+    {% for item in site.data.navigation %}
+      {% if page.title == 'resume' %}
+        <li>
+          <a href="{{ item.link }}">
+            <i class="material-icons" style="color: {{ item.color }}">{{ item.icon }}</i>
+            {{ item.name }}
+          </a>
+        </li>
+        <ul>
+        {% for subitem in item.subdirectories %}
+          <li>
+            <a href="{{ subitem.link }}">
+              <i class="material-icons" style="color: {{ subitem.color }}">{{ subitem.icon }}</i>
+              {{ subitem.name }}
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      {% else %}
+        <li>
+          <a href="{{ item.link }}">
+            <i class="material-icons" style="color: {{ item.color }}">{{ item.icon }}</i>
+            {{ item.name }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <a class="github" href="https://github.com/ctsexton" target="_blank">
+    {% include github.svg %}
+  </a>
+</nav>

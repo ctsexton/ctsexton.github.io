@@ -1,0 +1,6 @@
+.git
+.sass-cache
+_site
+node_modules
+Gemfile.lock
+yarn.lock

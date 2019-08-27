@@ -1,0 +1,15 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "<cameron.t.sexton@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack && bundle exec jekyll build",
+    "webpack": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
+  }
+}

@@ -1,0 +1,24 @@
+- name: Writing
+  link: /writing
+  icon: edit
+  color: '#4caf50'
+- name: Portfolio
+  link: /resume#portfolio
+  icon: build
+  color: '#fdd835'
+- name: Experience
+  icon: trending_up
+  link: /resume#experience
+  color: '#e91e63'
+- name: Technologies
+  link: /resume#skills
+  icon: assessment
+  color: '#4caf50'
+- name: Audio Work
+  link: /instruments
+  icon: audiotrack
+  color: '#2196f3'
+- name: Contact
+  link: /contact
+  icon: mail
+  color: '#795548'

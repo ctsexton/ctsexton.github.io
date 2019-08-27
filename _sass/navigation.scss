@@ -1,0 +1,85 @@
+.navigation {
+  position: fixed;
+  width: var(--nav-width);
+  font-weight: 300;
+  font-size: 1.1em;
+  background: #fafafa;
+  box-shadow: 0 0 10px 0 #aaa;
+  height: 100%;
+  transform: translate(-100%, 0);
+  transition: transform 500ms;
+  @media (min-width: $medium) {
+    transform: translate(0, 0);
+  }
+}
+.open {
+  transform: translate(0, 0)!important;
+}
+.navigation nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation nav ul ul li {
+  padding-left: 2em;
+  font-size: 0.9em;
+}
+.navigation nav ul li a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: 100;
+  text-decoration: none;
+  color: var(--nav-text-color);
+  padding: 5px;
+}
+.navigation nav ul li i {
+  padding: 0.25em 0.5em 0.25em 0.25em;
+}
+.navigation nav ul li:hover {
+  background: #eee;
+}
+
+.navigation .business-card {
+  height: 150px;
+  width: var(--nav-width);
+  background: $primary-blue;
+  display: none;
+  @media (min-width: $medium) {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.navigation .business-card h3 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  width: 100px;
+  line-height: 1.4em;
+  font-weight: 100;
+  letter-spacing: normal;
+  font-family: var(--font-theme);
+}
+.navigation .business-card p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+  width: 100px;
+  line-height: 1.4em;
+  font-weight: 100;
+}
+.navigation .github {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px 0 0 5px;
+  svg {
+    fill: #333;
+    width: 50px;
+    &:hover {
+      fill: #000;
+    }
+  }
+}

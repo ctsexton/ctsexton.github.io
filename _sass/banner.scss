@@ -1,0 +1,37 @@
+.banner {
+  width: 100%;
+  background: $primary-blue;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  @media (min-width: $medium) {
+    display: none;
+  }
+  position: sticky;
+  top: 0;
+  height: 50px;
+}
+.banner i {
+  padding: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.banner .title {
+  width: calc(100% - 40px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner a {
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+}
