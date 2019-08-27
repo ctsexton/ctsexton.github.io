@@ -47,7 +47,7 @@ a {
   min-height: 100vh;
 }
 .cover {
-  background-image: url('/assets/images/blue_wall-low.jpg');
+  background-image: url({{ "/assets/images/blue_wall-low.jpg" | relative_url }});
   background-size: cover;
   width: 100%;
   height: 100%;
