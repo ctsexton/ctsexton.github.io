@@ -22,22 +22,35 @@
       height: 10px;
       background-color: #ccc;
       border-radius: 50%;
-      top: 0.5em;
+      top: 0.25em;
       margin-left: -19px;
     }
-    grid-template-columns: 100px 600px;
-    .timeframe {
-      grid-column-start: 1;
-      grid-column-end: 2;
-    }
     .detail {
-      grid-column-start: 2;
-      grid-column-end: 3;
+      padding-top: 1em;
+      max-width: 100%;
       h4, h5 {
-        padding-bottom: 5px;
+        padding-bottom: 0.5em;
       }
       li {
         padding-bottom: 0.5em;
+      }
+    }
+    @media (min-width: 950px) {
+      grid-template-columns: 100px 600px;
+      .timeframe {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      .detail {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding-top: 0;
+        h4, h5 {
+          padding-bottom: 5px;
+        }
+        li {
+          padding-bottom: 0.5em;
+        }
       }
     }
   }
