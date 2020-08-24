@@ -1,8 +1,10 @@
 .timeline {
   position: relative;
   padding-left: 20px;
-  margin-top: 2em;
   max-width: 700px;
+  @media (min-width: $medium) {
+    margin-top: 2em;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -35,7 +37,7 @@
         padding-bottom: 0.5em;
       }
     }
-    @media (min-width: 950px) {
+    @media (min-width: $large) {
       grid-template-columns: 100px 600px;
       .timeframe {
         grid-column-start: 1;
