@@ -12,10 +12,11 @@ html {
 body {
   height: 100%;
   width: 100%;
+  color: #fafafa;
 }
 :root {
   --nav-width: 200px;
-  --nav-text-color: #000;
+  --nav-text-color: #fff;
   --theme-font: 'Roboto', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -24,10 +25,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #fafafa;
+  font-weight: 700;
 }
 a:hover {
-  background-color: #eee;
+  background-color: #666;
 }
 .button {
   padding: 0.25em;
@@ -46,7 +48,8 @@ a:hover {
     margin-left: var(--nav-width);
   }
   padding: 20px;
-  background: #f8f8f8;
+  // background: #f8f8f8;
+  background: #1a1a1a;
   min-height: 100vh;
 }
 .cover {

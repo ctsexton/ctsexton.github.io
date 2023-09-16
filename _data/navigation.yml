@@ -1,7 +1,7 @@
-- name: Writing
-  link: /writing
-  icon: edit
-  color: '#4caf50'
+# - name: Writing
+#   link: /writing
+#   icon: edit
+#   color: '#4caf50'
 - name: Software
   link: /software
   icon: build

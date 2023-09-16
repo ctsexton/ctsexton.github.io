@@ -6,9 +6,10 @@
     </div>
   </a>
   <ul>
+    {% assign url = page.url|remove:'.html' %}
     {% for item in site.data.navigation %}
       {% if page.title == 'resume' %}
-        <li>
+        <li {% if url == item.link %}class="current"{% endif %}>
           <a href="{{ item.link | relative_url }}">
             <i class="material-icons" style="color: {{ item.color }}">{{ item.icon }}</i>
             {{ item.name }}
@@ -25,7 +26,7 @@
         {% endfor %}
         </ul>
       {% else %}
-        <li>
+      <li {% if url == item.link %}class="current"{% endif %}>
           <a href="{{ item.link | relative_url }}">
             <i class="material-icons" style="color: {{ item.color }}">{{ item.icon }}</i>
             {{ item.name }}

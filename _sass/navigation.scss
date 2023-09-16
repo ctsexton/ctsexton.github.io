@@ -3,8 +3,8 @@
   width: var(--nav-width);
   font-weight: 300;
   font-size: 1.1em;
-  background: #f4f4f4;
-  box-shadow: 0 0 10px 0 #aaa;
+  background: #333;
+  box-shadow: 0 0 10px 0 #222;
   height: 100%;
   transform: translate(-100%, 0);
   transition: transform 500ms;
@@ -27,6 +27,14 @@
   &:hover, & a:hover {
     background-color: #777;
     color: white;
+  }
+  &.current {
+    background-color: #555;
+    color: white;
+    &:hover, & a:hover {
+      background-color: #777;
+      color: white;
+    }
   }
 }
 .navigation nav ul li a {
@@ -77,11 +85,14 @@
   bottom: 0;
   left: 0;
   padding: 0px 0 5px 10px;
+  &:hover {
+    background-color: #333;
+  }
   svg {
-    fill: #333;
+    fill: #ccc;
     width: 50px;
     &:hover {
-      fill: #000;
+      fill: #fff;
     }
   }
 }

@@ -57,12 +57,15 @@
     }
   }
 }
+.employer {
+  margin-bottom: 2em;
+}
 .education {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   .degree {
-    margin: 1em;
+    margin: 0 1em;
     max-width: 350px;
   }
   h4 {
