@@ -12,6 +12,7 @@ Inspired by Miller Puckette's peak tracking mode in the Pd/Max ~sigmund object.
 - Detune: applies a random offset to each frequency partial in the reassembled sound.
 - Synth mode: connect a MIDI input and play notes to transpose the signal. Transposition is relative to middle C (Note 60). Use chords to create harmonies.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JVvRggFd4_g?si=tDxfF1qymieV33yB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 [source code](https://github.com/ctsexton/peak-tracker)
 
