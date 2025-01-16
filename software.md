@@ -19,6 +19,18 @@ Inspired by Miller Puckette's peak tracking mode in the Pd/Max ~sigmund object.
 [Download VST3 for Mac]({{ "/assets/software/PeakTrackerInstallerUniversalBinary.pkg" | relative_url }})
 
 <hr/>
+## chaotic delay
+Glitchy, messy, random audio delays.
+
+#### Features:
+- Delay buffer read/write head randomly changes speed and direction
+- Chance & rate parameters determine how frequently the head changes speed/direction
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bvbjJuZpEaM?si=C3UE9bmwPh862pDm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+[source code](https://github.com/ctsexton/chaotic_delay)
+
+<hr/>
 
 ## sample mangler
 Written in SuperCollider, record sounds and manipulate the playhead to chop them up in real time. Inspired by Rodrigo Constanzo's Max patch "The Chocolate Grinder".
