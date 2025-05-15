@@ -3,7 +3,7 @@ layout: default
 title: software
 ---
 ## peak tracker
-Spectral audio effect plugin (available as VST3, CLAP, LV2).
+Open source spectral audio effect (VST3, CLAP, LV2).
 Transpose and detune sounds by splitting them into frequency components and resynthesizing.
 Inspired by Miller Puckette's peak tracking mode in the Pd/Max ~sigmund object.
 
@@ -20,7 +20,7 @@ Inspired by Miller Puckette's peak tracking mode in the Pd/Max ~sigmund object.
 
 <hr/>
 ## chaotic delay
-Glitchy, messy, random audio delays.
+Open source. Glitchy, messy, random audio delays.
 
 #### Features:
 - Delay buffer read/write head randomly changes speed and direction
